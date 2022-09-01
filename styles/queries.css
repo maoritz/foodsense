@@ -1,0 +1,26 @@
+@media screen and (min-width: 480px) {
+    :root{
+        --gallery-box-gap: 2rem
+    }
+    /* ==== Navigation ===== */
+    nav.main-nav{
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    /* ==== Gallery ===== */
+    .gallery{
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: var(--gallery-box-gap) var(--gallery-box-gap);
+        justify-content: center;
+    }
+    
+    .gallery__gallery-box{
+        flex-basis:calc(50% - var(--gallery-box-gap)) ;
+    }
+}
+
+/* @media screen and (min-width: 767px) {
+
+} */

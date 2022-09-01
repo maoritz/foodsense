@@ -2,59 +2,64 @@
 @import url(./_base.css);
 @import url(./_typography.css);
 
-
+/* ==== General ===== */
 .wrapper{
-    padding: 0 2%;
     line-height: 2.5rem;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
  }
 
  section{
-    border-top: #E5E5E5 1px dashed;
-    padding-top: 2rem;
-    margin: 6rem 0;
+    border-bottom: #E5E5E5 1px dashed;
+    margin: 2rem 0;
  }
 
 h2{
     font-size: 3rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 /* ==== Navigation ===== */
-nav{
+nav.main-nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .main-nav__nav-list{
     display: flex;
     color: #5DB3B0;
     justify-content: space-evenly;
-    margin: 3rem 0;
+    gap: 0 1.2rem;
 }
 
-.main-nav__nav-item{
-    margin-right: 2rem;
-}
-
-/* ==== Logo ===== */
+/*  Logo  */
 .logo{
     display: flex;
     justify-content: center;
 }
 
 .logo img{
-    height: 20rem;
+    height: 13rem;
 }
 
-/* ==== Hero Section ===== */
+/* ==== Main ===== */
+
+/* Hero Section */
 .hero-box{
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 4rem;
+}
+
+.hero-box__hero-image{
+    height: 100%;
 }
 
 .hero-box__text-container{
@@ -81,7 +86,7 @@ nav{
     color: #fff;
 }
 
-/* ==== Signup Section ===== */
+/* Signup Section */
 .sign-up{
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +94,6 @@ nav{
     padding-left: 3rem;
     padding-right: 3rem;
 }
-
 
 .sign-up__text{
     flex-basis: 86%;
@@ -105,7 +109,6 @@ nav{
     display: flex;
 }
 
-
 .sign-up button{
     background-color: #ffc107;
     border: 1px solid #ffc107;
@@ -114,27 +117,25 @@ nav{
     margin-left: 1rem;
 }
 
-/* ==== Gallery Section ===== */
-.gallery__gallery-container{
+/* Gallery Section */
+.gallery{
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.gallery-container__gallery-item img{
+.gallery__gallery-box img{
     width: 100% ;
 }
 
-/* ==== Footer Section ===== */
+/* ==== Footer ===== */
 .footer{
     display: flex;
     justify-content: space-between;
     margin: 0 1.5rem;
-
 }
 
 .footer__socials-box{
     display: flex;
     gap: 1.5rem;
 }
-
