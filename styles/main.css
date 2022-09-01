@@ -1,0 +1,140 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+
+
+.wrapper{
+    padding: 0 2%;
+    line-height: 2.5rem;
+ }
+
+ section{
+    border-top: #E5E5E5 1px dashed;
+    padding-top: 2rem;
+    margin: 6rem 0;
+ }
+
+h2{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+/* ==== Navigation ===== */
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.main-nav__nav-list{
+    display: flex;
+    color: #5DB3B0;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.main-nav__nav-item{
+    margin-right: 2rem;
+}
+
+/* ==== Logo ===== */
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    height: 20rem;
+}
+
+/* ==== Hero Section ===== */
+.hero-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 4rem;
+}
+
+.hero-box__text-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-container__white-bg{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.text-container__black-bg{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 1.2rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+}
+
+/* ==== Signup Section ===== */
+.sign-up{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6rem 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+.sign-up__text{
+    flex-basis: 86%;
+}
+
+.sign-up__signup-icon{
+    flex-basis: 8%;
+    font-size: 2rem;
+}
+
+.sign-up form{
+    margin-top: 2rem;
+    display: flex;
+}
+
+
+.sign-up button{
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 3px;
+    padding: 0.6rem 1.2rem;
+    margin-left: 1rem;
+}
+
+/* ==== Gallery Section ===== */
+.gallery__gallery-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.gallery-container__gallery-item img{
+    width: 100% ;
+}
+
+/* ==== Footer Section ===== */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+
+}
+
+.footer__socials-box{
+    display: flex;
+    gap: 1.5rem;
+}
+
