@@ -15,7 +15,7 @@
 
  section{
     border-bottom: #E5E5E5 1px dashed;
-    margin: 2rem 0;
+    margin: 1rem 0;
  }
 
 h2{
@@ -138,4 +138,11 @@ nav.main-nav{
 .footer__socials-box{
     display: flex;
     gap: 1.5rem;
+}
+
+/* ==== Desktop ===== */
+
+/* Navigation */
+.desktop-nav__nav-list{
+    display: none;
 }
