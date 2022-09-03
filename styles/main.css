@@ -15,16 +15,21 @@
 
  section{
     border-bottom: #E5E5E5 1px dashed;
-    margin: 1rem 0;
  }
 
 h2{
     font-size: 3rem;
     margin: 1rem 0;
+    line-height: 4rem;
 }
 
+img{
+    max-width:100% ;
+ }
+
+
 /* ==== Navigation ===== */
-nav.main-nav{
+.main-nav{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -125,19 +130,41 @@ nav.main-nav{
 }
 
 .gallery__gallery-box img{
-    width: 100% ;
+    max-width: 100%;
 }
 
 /* ==== Footer ===== */
 .footer{
     display: flex;
     justify-content: space-between;
-    margin: 0 1.5rem;
+    margin-top: 4rem;
+    font-size: 1.3rem;
 }
 
 .footer__socials-box{
     display: flex;
     gap: 1.5rem;
+}
+
+.footer__socials-box a{
+    font-size: 3rem;
+    color: rgb(139, 139, 139);
+}
+
+/* Social Icons Hover Color */
+.twitter:hover, 
+.twitter:active{
+    color: #1da1f2;
+}
+
+.rss:hover, 
+.rss:active{
+    color: #F29C00;
+}
+
+.instagram:hover,
+.instagram:active{
+    color: #4c5fd7;
 }
 
 /* ==== Desktop ===== */
@@ -146,3 +173,4 @@ nav.main-nav{
 .desktop-nav__nav-list{
     display: none;
 }
+

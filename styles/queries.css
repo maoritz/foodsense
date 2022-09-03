@@ -3,7 +3,7 @@
         --gallery-box-gap: 2rem
     }
     /* ==== Navigation ===== */
-    nav.main-nav{
+    .main-nav{
         align-items: center;
         flex-direction: row-reverse;
     }
@@ -22,11 +22,12 @@
 }
 
 @media screen and (min-width: 767px) {
-
+    
     .wrapper{
         max-width: 76rem;
     }
 
+    /* ==== Navigation ===== */
     .desktop-nav{
         width: 100%;
     }
@@ -44,6 +45,11 @@
         border-left: 1px white solid;
     }
 
+    .desktop-nav__nav-list li:hover,
+    .desktop-nav__nav-list li:active{
+        background-color: #ffc106cb;
+    }
+
     .desktop-nav__nav-list li:first-child{
         border-left: none;
     }
@@ -52,6 +58,7 @@
         border-right: none;
     }
     
+    /* ==== Gallery ===== */
     :root{
         --gallery-box-gap: 1.5rem
     }
@@ -65,4 +72,34 @@
         flex-basis:calc(25% - var(--gallery-box-gap)) ;
     }
 
+}
+
+@media screen and (min-width: 990px){
+
+     .wrapper{
+        max-width: 100rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+
+     .main-nav{
+        flex-basis: 20%;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: start;
+     }
+
+     .main-nav__nav-list{
+        justify-content:flex-start;
+        gap: 0 1.2rem;
+        flex-direction: column;
+    }
+
+     .main{
+        flex-basis: 80%;
+     }
+
+     .footer{
+        flex-basis: 90%;
+     }
 }
