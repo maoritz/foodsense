@@ -1,6 +1,6 @@
-/* @import url(./_reset.css);
+@import url(./_reset.css);
 @import url(./_base.css);
-@import url(./_typography.css); */
+@import url(./_typography.css);
 
 *,
 *::after,
@@ -13,6 +13,9 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+ul{
+    list-style: none;
 }
 button {
   background-color: transparent;
@@ -33,6 +36,8 @@ body {
   height: 100%;
 }
 
+
+
 /* ==== General ===== */
 .wrapper{
     line-height: 2.5rem;
@@ -44,13 +49,9 @@ body {
     justify-content: center;
  }
 
- ol, ul {
-	list-style: none;
-}
-
  section{
     border-bottom: #E5E5E5 1px dashed;
-}
+ }
 
 h2{
     font-size: 3rem;
