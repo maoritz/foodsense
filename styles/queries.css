@@ -103,3 +103,9 @@
         flex-basis: 90%;
      }
 }
+
+@media screen and (min-width: 1200px){
+    .wrapper{
+        max-width: 1200rem;
+     }
+}

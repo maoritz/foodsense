@@ -1,6 +1,37 @@
-@import url(./_reset.css);
+/* @import url(./_reset.css);
 @import url(./_base.css);
-@import url(./_typography.css);
+@import url(./_typography.css); */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  cursor: pointer;
+}
+html {
+  /* easier rem calc... */
+  font-size: 10px;
+}
+body {
+  overflow-x: hidden;
+  font-size: 1.6rem;
+}
+html,
+body {
+  height: 100%;
+}
 
 /* ==== General ===== */
 .wrapper{
@@ -13,9 +44,13 @@
     justify-content: center;
  }
 
+ ol, ul {
+	list-style: none;
+}
+
  section{
     border-bottom: #E5E5E5 1px dashed;
- }
+}
 
 h2{
     font-size: 3rem;
